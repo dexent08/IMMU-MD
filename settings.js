@@ -2,7 +2,7 @@ const fs = require('fs')
 if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 
 
-global.SESSION_ID = process.env.SESSION_ID || ''
+global.SESSION_ID = process.env.IMMU-MD:~eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiU01ERmlMbk9KdUtiNGw4bDdmMzcwMll6TVZOY29tQXhNc2pjb2oxK3JVTT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiUVBTNDdBcGQ4NWdIQlU4Szh0ZzlsUnNib2ZzVUFhV2RQZjlUcTBzd0FVQT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJPSy9WNm13VE5jNnlYZlpoWjlRdE12OFB1N1hzcTZ3THhIRHFyWjFHMFVrPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJmbDU0Zk51T3RwZHVmSnNKdXUyajVWY0UxUHlVb2dMa0VYbWZ4SlZVVjBJPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlNLVlJoR0U1WlpTUlhDRzVqaGJWT0Q0LzRDSWVKaXAvdHc0U0dDZ1RuME09In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlBLZkVQRFhJZGs5YmIxc281Ly9YdGdvSEpCMXFtakR5eTFKdlgrUkFmSFU9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoid0g4dzlxVUcvaHlYb21KdCtjMGtwN2h2aitZWklwUzdXMTdsWUl1a21XTT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiVHdpNTdlOVdVQi96ZmlrSVdHaDRQYkZ5cGV3dUVOc1R3UjUrS2hFeVJrRT0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImVmUDNwaTd2a0VEeHdDTWpsclprWTRxVWJwL21vQ0VHQWhERGpmSnJ0eEI4SFZTZ1c4d1Rxb2dmcUNjNFgxR1NrMXY3TWMvY3g2Vlp1Rkd3WkJLcGpRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTY5LCJhZHZTZWNyZXRLZXkiOiJVejhHbys4TnRoTWxEbitHelRnL2NHRURtWW5BSUNBQ1UwTHJEaTZ0d3R3PSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwicmVnaXN0ZXJlZCI6dHJ1ZSwicGFpcmluZ0NvZGUiOiJMRFNaOUJTOSIsIm1lIjp7ImlkIjoiOTIzMTc1NzM0MTU3OjM3QHMud2hhdHNhcHAubmV0IiwibGlkIjoiNjk3Njc5MDE3NDEyNzU6MzdAbGlkIn0sImFjY291bnQiOnsiZGV0YWlscyI6IkNPbTZ3cUlIRU1qRW5zTUdHQUVnQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiJBUmFxMFJYMmNtK2paTllGd0NoRU96eDcrTFFaWVlXYXBkOERNTG5RVXdZPSIsImFjY291bnRTaWduYXR1cmUiOiJuTWFiUTZvV05ibmF1ckVuOC9vaERPMk5qdk96ankxcEFrT3cvL2tSd245Q3djOXc1a1Vsd1VSeXpRZzVlazEwSGtSRTd6MXVsREZlanZWbWMwempDQT09IiwiZGV2aWNlU2lnbmF0dXJlIjoiQVRHZGZvVW9IWlFkSUpEaVo5cXk4RHRiY2lTcGY1OTY4REZQSlBxTFhUL0drOFFxWnkvcEJOZ0JWWVhrbGV5NEdZQ0RVRVR2bytGQmV3S3dWQzd5Z1E9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiI5MjMxNzU3MzQxNTc6MzdAcy53aGF0c2FwcC5uZXQiLCJkZXZpY2VJZCI6MH0sImlkZW50aWZpZXJLZXkiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJCUUVXcXRFVjluSnZvMlRXQmNBb1JEczhlL2kwR1dHRm1xWGZBekM1MEZNRyJ9fV0sInBsYXRmb3JtIjoiYW5kcm9pZCIsInJvdXRpbmdJbmZvIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQ0JJSUNBPT0ifSwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzUxNjIyMjI5LCJsYXN0UHJvcEhhc2giOiIyVjc3cVUifQ==|| ''
 
 
 global.PREFIX = process.env.PREFIXZ || '.'
@@ -13,12 +13,12 @@ global.mode = process.env.MODE || 'public';
 // Set 'public' to enable public mode
 
 
-global.botname = process.env.BOT_NAME || 'IMMU MD'
+global.botname = process.env.BOT_NAME || '🅥👑⃝❂͜͡D̸E̸X̸E̸N̸T̸⍣⃟❂͜͡'
 
 global.ownernumber = process.env.OWNER_NUMBER || '92xxxxxxxxx'
 
 
-global.antidelete = process.env.ANTIDELETE || 'private'
+global.antidelete = process.env.ANTIDELETE || 'false'
 // options:- 'private', 'chat' or 'off'
 // private = Sends to message yourself 
 // chat = sends to the current chat 
@@ -31,7 +31,7 @@ global.statusemoji = process.env.STATUS_EMOJI || "🧡,💚,🔥,✨,❤️,🥰
 global.autoviewstatus = process.env.AUTO_STATUS_VIEW || 'true'
 
 
-global.autoreactstatus = process.env.AUTO_STATUS_REACT || 'false'
+global.autoreactstatus = process.env.AUTO_STATUS_REACT || 'true'
 
 
 global.timezones = process.env.TIMEZONE || "Pakistan/Karachi" 
